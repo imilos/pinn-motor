@@ -1,2 +1,2 @@
 # pinn-motor
-Direct and inverse ODE model of a motor with load
+Direct and inverse PINN model of a motor with a load
