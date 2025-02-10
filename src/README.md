@@ -14,4 +14,4 @@ The governing ODEs are formulated to capture the system dynamics, including iner
 Unlike the forward model, where system parameters are fixed, this model introduces **J_m** as a learnable variable constrained within a predefined range. 
 Initial conditions enforce zero displacements and velocities at the start, while additional boundary conditions ensure physical consistency. 
 The model also incorporates **point-set boundary conditions** from experimental data. A fully connected neural network with two hidden layers of 80 neurons each is trained using the Adam optimizer. 
-The learned value of **J_m** is printed at the end, and the predicted angular displacement of the load is saved for further analysis.
+The learned value of **Jm** is printed at the end, and the predicted angular displacement of the load is saved for further analysis.
