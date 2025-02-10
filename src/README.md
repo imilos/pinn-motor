@@ -10,7 +10,7 @@ After training, the model predicts angular displacements over time, and the resu
 ## Results
 The results show a good match between the classical Runge-Kutta and the PINN model.
 
-![theta_m](theta_m.png)
+![theta_m](../theta_m.png)
 
 # Inverse PINN model
 This inverse PINN model estimates the motor inertia **Jm** in a two-degree-of-freedom torsional system by treating it as a trainable parameter. 
