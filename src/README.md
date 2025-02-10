@@ -16,7 +16,7 @@ The results show a good match between the classical Runge-Kutta and the PINN mod
 This inverse PINN model estimates the motor inertia **Jm** in a two-degree-of-freedom torsional system by treating it as a trainable parameter. 
 The model starts by loading experimental torque data from a MATLAB file, which is interpolated using TensorFlow Probability to provide a smooth function for external torque over time. 
 The governing ODEs are formulated to capture the system dynamics, including inertia, torsional stiffness, damping, and external torque effects. 
-Unlike the forward model, where system parameters are fixed, this model introduces **J_m** as a learnable variable constrained within a predefined range. 
+Unlike the forward model, where system parameters are fixed, this model introduces **Jm** as a learnable variable constrained within a predefined range. 
 Initial conditions enforce zero displacements and velocities at the start, while additional boundary conditions ensure physical consistency. 
 The model also incorporates **point-set boundary conditions** from experimental data. We specify several points **(t, theta_m, theta_m)** obtained from the classical ODE solver.
 A fully connected neural network with two hidden layers of 80 neurons each is trained using the Adam optimizer. 
