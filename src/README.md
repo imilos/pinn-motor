@@ -31,8 +31,9 @@ The second inverse model is more complex. Having all system parameters known, it
 * 400k iterations with a training rate of 2e-04. 
 Upon training completion, the file **Mem_finetuned.txt** contains one of the solutions for the input signal **Mem(t)**. It looks like this:
 
-
+![Mem](../Mem.png)
 
 ## Results of the inverse model (2)
 We can check if this input leads us to the correct output using the script **motor_direct.py** which resides in the same directory. The comparison between calculated **theta_l(t)** and the same quantity taken from the file **theta_l211.txt** gives the following:
 
+![theta_l](../theta_l_comparison.png)
